@@ -1,0 +1,26 @@
+#once in venv
+
+#setup vitual env
+python -m vnev venv
+
+#activate venv
+venv\Scripts\activate
+
+python -m pip install --upgrade pip
+pip install flask
+SET FLASK_APP=hello.py
+
+
+#----
+#activate venv
+venv\Scripts\activate
+
+#run server
+flask run --debugger --reload
+
+
+#access server
+start http://localhost:5000
+
+#deactive server
+venv\Scripts\deactivate
