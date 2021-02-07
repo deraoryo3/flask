@@ -24,3 +24,5 @@ start http://localhost:5000
 
 #deactive server
 venv\Scripts\deactivate
+
+

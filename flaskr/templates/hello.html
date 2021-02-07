@@ -3,15 +3,21 @@
     <head>
         <meta charset="utf-8">
         <title>{{props.title}}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
     </head>
     <body>
-        <div id="contents">
-            <p>{{props.msg}}</p>
+        <div class="ui main text container">
+            <h1 class="ui header">Sticky Example</h1>
+            <p>This example shows how to use lazy loaded images, a sticky menu, and a simple text container</p>
+            <div class="ui text container">
+                <p>{{props.msg}}</p>
+            </div>
+            <ul class="ui bulleted list">
+                <li><a href="/">Home</a></li>
+            </ul>
         </div>
-        <hr>
-        <ul>
-            <li><a href="/">Home</a></li>
-        </ul>
     </body>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </html>

@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <div class="ui text grid container">
         <meta charset="utf-8">
         <title>{{props.title}}</title>
+        </div>
     </head>
     <body>
-        <div id="contents">
+        <div class="ui text grid container">
             <p>{{props.msg}}</p>
         </div>
         <hr>
-        <ul>
+        <ul class="ui bulleted list">
             <li><a href="/hello">Hello World</a></li>
         </ul>
     </body>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 </html>
